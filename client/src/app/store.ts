@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
-import tickerReducer from '../components/TickerForm/tickerSlice'
+import tickerReducer from '../features/TickersList/tickerSlice'
 
 export const store = configureStore({
   reducer: {

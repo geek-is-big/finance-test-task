@@ -1,5 +1,5 @@
 import React from 'react'
-import TickerForm from './components/TickerForm/TickersForm'
+import TickerForm from './features/TickersList/TickersList'
 import NavBar from './components/NavBar'
 
 function App() {

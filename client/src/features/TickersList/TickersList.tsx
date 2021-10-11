@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
-import Ticker from '../Ticker/Ticker'
+import Ticker from '../../components/Ticker/Ticker'
 import { selectTickers, subscribeOnTickers, unsubscribeFromTickers } from './tickerSlice'
 
 const TickerForm = () => {

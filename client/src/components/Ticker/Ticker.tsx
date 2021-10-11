@@ -1,5 +1,5 @@
 import React from 'react'
-import { ISimpleTicker } from '../types'
+import { ISimpleTicker } from '../../features/types'
 import Arrow, { ArrowDirections } from '../Arrow'
 
 export interface ITickerProps extends ISimpleTicker {}

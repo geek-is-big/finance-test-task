@@ -5,7 +5,7 @@ import { store } from '../../app/store'
 import { updateTickers } from './tickerSlice'
 import { ITickers } from '../types'
 
-import TickerForm from './TickersForm'
+import TickerForm from './TickersList'
 
 const renderTickerForm = (): RenderResult =>
   render(
