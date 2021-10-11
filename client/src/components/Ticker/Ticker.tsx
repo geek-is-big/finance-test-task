@@ -8,7 +8,7 @@ const Ticker = (props: ITickerProps) => {
   const { ticker, price, change, changePercent } = props
 
   if (!changePercent || !price || !ticker) {
-    return <div>Invalid ticker data</div>
+    return <div className="px-10 py-2 my-1">Invalid ticker data</div>
   }
 
   const percent = changePercent > 0 ? `+${changePercent}%` : `${changePercent}%`
