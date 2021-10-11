@@ -9,4 +9,9 @@ export interface ISimpleTicker {
   lastTradeTime?: string
 }
 
+export interface IRecivedTicker extends Omit<ISimpleTicker, 'changePercent' | 'lastTradeTime'> {
+  change_percent?: number
+  last_trade_time?: string
+}
+
 export type ITickers = Array<ISimpleTicker>

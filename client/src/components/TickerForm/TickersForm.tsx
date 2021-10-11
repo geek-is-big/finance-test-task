@@ -23,13 +23,15 @@ const TickerForm = () => {
 
   return (
     <ul className="list-none pt-[1px] overflow-hidden">
-      {tickers.map((ticker, i) => {
+      {tickers.map((ticker) => {
         return (
-          <li className="border-t border-b mt-[-1px] py-2 ml-[-1px] float-left box-border" key={i}>
-            <div className="border-l">
-              <Ticker {...ticker} />
-            </div>
-          </li>
+          ticker.ticker && (
+            <li className="border-t border-b mt-[-1px] py-2 ml-[-1px] float-left box-border" key={ticker.ticker}>
+              <div className="border-l">
+                <Ticker {...ticker} />
+              </div>
+            </li>
+          )
         )
       })}
     </ul>

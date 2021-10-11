@@ -1,5 +1,5 @@
 import { RootState } from '../../app/store'
-import { ITickers } from '../types'
+import { ITickers, IRecivedTicker } from '../types'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { io } from 'socket.io-client'
 
@@ -41,7 +41,7 @@ export const subscribeOnTickers = () => (dispatch: Function) => {
   })
 
   socket.on('ticker', (resp) => {
-    const data = resp.map((ticker: any) => ({
+    const data = resp.map((ticker: IRecivedTicker) => ({
       changePercent: ticker?.change_percent,
       lastTradeTime: ticker?.last_trade_time,
       ...ticker,
