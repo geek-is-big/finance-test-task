@@ -1,6 +1,6 @@
 import React from 'react'
-import TickerForm from './features/TickersList/TickersList'
-import NavBar from './components/NavBar'
+import TickerForm from '../features/TickersList/TickersList'
+import NavBar from '../components/NavBar'
 
 function App() {
   return (
